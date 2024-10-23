@@ -7,7 +7,7 @@ from collections import Counter
 import time
 
 # OpenWeatherMap API Key
-API_KEY = '82f3fbf407f319639d45c0fa2f8a9db7I'
+API_KEY = 'your-api-key'
 
 # Cities for which we will monitor the weather
 cities = ['Delhi', 'Mumbai', 'Chennai', 'Bangalore', 'Kolkata', 'Hyderabad']
@@ -31,7 +31,7 @@ def create_database():
     conn.close()
 
 def get_weather_data(city):
-    url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid=82f3fbf407f319639d45c0fa2f8a9db7'
+    url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}'
     response = requests.get(url)
     
     if response.status_code != 200:
