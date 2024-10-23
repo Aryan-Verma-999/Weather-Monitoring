@@ -1,0 +1,5 @@
+requests==2.31.0
+SQLAlchemy==2.0.21
+pytz==2023.3
+apscheduler==3.9.1.post1
+sqlite3==0.0.1
